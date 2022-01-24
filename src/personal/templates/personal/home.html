@@ -6,8 +6,8 @@
 <p>Here is where  you put stuff that should be in the body of your websites.</p>
 
 
-{% for list_item in list_of_values %}
-    {{list_item}}<br>
+{% for question in questions %}
+    {% include 'personal/snippets/body_snippet.html' with value=question %}
     {% endfor %}
 
 {% include 'personal/snippets/body_snippet.html' %} 
