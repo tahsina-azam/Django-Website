@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
     <head>
-        <title>This is the header</title>
+        <div style="border: 2px solid #000;">
+            <h2>This is the Header.</h2>
+          </div>
     </head>
     <body>
-        <h1>This is the body</h1>
+        {% block content %}
+        {% endblock content %}
     </body>
     <footer>
-        <h3>This is the footer</h3>
+      <div style="border: 2px solid #000;">
+        <h2>This is the footer.</h2>
+      </div>
     </footer>
 </html>
