@@ -11,6 +11,7 @@ def home_screen_view(request):
     #     'some_string': "this is some string that I'm passing to the view",
     #     'some_number': 12345
     # }
+    context={}
     list_of_values = []
     list_of_values.append("first entry")
     list_of_values.append("second entry")
