@@ -1,6 +1,6 @@
 from multiprocessing import context
 from django.shortcuts import render
-from personal.models import Question
+from account.models import Account
 
 # Create your views here.
 def home_screen_view(request):
@@ -20,7 +20,9 @@ def home_screen_view(request):
     # list_of_values.append("fourth entry")
     # context['list_of_values'] = list_of_values
 
-    questions = Question.objects.all()
-    context['questions']=questions
+    # questions = Question.objects.all()
+    # context['questions']=questions
+    accounts = Account.objects.all()
+    context['accounts'] = accounts
 
     return render(request,"personal/home.html",context)
